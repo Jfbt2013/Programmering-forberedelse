@@ -1,0 +1,7 @@
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\bin\Debug\Program.exe.config
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\bin\Debug\Program.exe
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\bin\Debug\Program.pdb
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\obj\Debug\Program.exe
+O:\Skrivebord\Programmering\1. Intro til Programmering i C#\Program\Program\obj\Debug\Program.pdb
