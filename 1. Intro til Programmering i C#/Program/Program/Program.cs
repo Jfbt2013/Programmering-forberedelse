@@ -210,6 +210,12 @@ namespace Program
                 Og hvis ingen af betingelserne er opfyldt,  og du vil have den laver plan b, istedet for den går ind i resten af koden skriver du else
                 Man må maks have 1 else 
 
+            Tror ikke det vigtigt men:
+            Man kan så også lave ekstra betingelser, som ser sådan her ud:
+                a<b && c==d     | a er mindre end b OG c er lig med d
+                a>b || b==c     | a er større end b ELLER b er lig med c
+            Læs mere her: https://www.w3schools.com/cs/cs_operators_logical.php
+            
             */
 
             //Lad os demonstrere
@@ -240,9 +246,122 @@ namespace Program
             {
                 Console.WriteLine("Ingen condition virkede");
             }
-
             Console.ReadKey();
 
+            /*
+            En anden løsning, som en erstatning på man laver en lang liste af "else if" erklæringer så kan man bruge switch(case)
+
+            Strukturen på sådan en forgår
+            switch(variabelnavn){
+                case værdi:
+                    funktionA();
+                    break;
+
+            }
+            Her er tjekker vi om variablet har en bestemt værdi
+            Man kan så tilføje "default", hvis den har ingen af værdierne. Lidt lige som "else"
+            switch(variabelnavn){
+                case værdi:
+                    funktionA();
+                    break;
+                default:
+                    funktionB();
+                    break;
+            }
+
+            Man kan lave uendelige case, og det skulle vidst fylde en smule mindre i forhold til hvis man laver else if
+
+            */
+
+            //Eksempler
+            Console.WriteLine("Skriv ja eller nej");
+            string caseinput = Console.ReadLine();
+            switch(caseinput) {
+                case "ja":
+                    Console.WriteLine("Du skrev ja");
+                    break;
+                case "nej":
+                    Console.WriteLine("Du skrev nej");
+                    break;
+                default:
+                    Console.WriteLine("Du skrev ingen af delene");
+                    break;
+            }
+
+            Console.WriteLine("Skriv 1 eller 2");
+            int caseinput2=Convert.ToInt32(Console.ReadLine());
+            switch(caseinput2)
+            {
+                case 1:
+                    Console.WriteLine("Du skrev 1");
+                    break;
+                case 2:
+                    Console.WriteLine("Du skrev 2");
+                    break;
+                default:
+                    Console.WriteLine("Du skrev ingen af tallene");
+                    break;
+            }
+
+            Console.ReadKey();
+            /*
+            Så kommer vi til løkker(loops)
+            Løkker er en måde, for at køre noget kode om og om igen, indtil en betingelse er noget
+            Der findes forskellige slags løkker
+            "For" løkker og "While" løkker
+
+            "While" løkker er den nemmeste, da den køre så længe en betingelse er sand
+            De ser sådan her ud: 
+            while(betingelse){
+                funktionA
+            }
+
+            "For" Løkker bruges med lister, strings eller ligende
+            deres syntaks er
+            for(erklæring1, erklæring2, erklæring3){
+                funktionA
+            }
+
+            erklæring1 bliver brugt 1 gang før koden går i gang
+            erklæring2 er vores betingelse
+            erklæring3 er kode, som bliver kørt hver gang når den har været igennem kodeblokken
+            
+            Et eksempel hvordan det nogenlunde kan se ud:
+            for(int i = x; i<y ;i++)
+            Læs mere her: https://www.w3schools.com/cs/cs_for_loop.php
+
+            Der findes så nogle keywords: "continue" og "break"
+            continue: går videre til næste iteration i løkken
+            break: stopper løkken
+            */
+
+            //while løkke
+            while(heltal4<10)
+            {
+                heltal4++;
+                Console.WriteLine(heltal4);
+            }
+            while (boolean1 == false)
+            {
+                decimaltal2++;
+                if (decimaltal2 > 0)
+                {
+                    Console.WriteLine("Passer");
+                    boolean1 = true;
+                    break;//Vi ødelækker resten af løkken
+                }
+                Console.WriteLine("Passer ikke");
+            }
+
+            for(int i = 0; i < 10; i++)
+            {
+                if(i==5)
+                {
+                    continue; //Hvis i er lig med 5, skal den gå videre til næste iteration
+                }
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
         }
     }
 }
