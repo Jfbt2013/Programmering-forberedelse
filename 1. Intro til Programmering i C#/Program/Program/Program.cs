@@ -48,7 +48,7 @@ namespace Program
             //Man kan også definere flere variabler på samme tid, så længe man har komma imellem
             //Tror ikke det er vigtigt, men jeg skriver det ned alligevel
             int heltal3 = 4, heltal4 = -3;
-            double decimaltal3=5.33,decimaltal4=-2.03;
+            double decimaltal3 = 5.33, decimaltal4 = -2.03;
             char bogstav3 = 'B', bogstav4 = 'b';
             string tekststreng3 = "Hej med dig!", tekststreng4 = "Farvel med dig";
             bool boolean3 = true, boolean4 = false;
@@ -60,7 +60,7 @@ namespace Program
                 variabel-=værdi; | Gør det omvendte af overnævnte. OBS virker ikke med char eller string
                 variabel++; | Den tager værdien, også går den op med 1. OBS: virker kun med variabler der bruger tal, såsom int og double
                 variabel--; | Tager værdien og går ned med 1. OBS virker kun med variabler der bruger tal.
-
+            Flere kan findes her https://www.w3schools.com/cs/cs_operators.php
             Husk, man skal ikke putte datatypen igen foran for at ændre variablen
             */
 
@@ -75,7 +75,7 @@ namespace Program
             heltal3--;
             Console.WriteLine(heltal3);
             Console.WriteLine(heltal4);
-            heltal4 -= (3*4);//Du kan også lave matematik med talvariabler 
+            heltal4 -= (3 * 4);//Du kan også lave matematik med talvariabler 
             Console.WriteLine(heltal4);
             Console.WriteLine(decimaltal1);
             decimaltal1 += 3.14;
@@ -128,7 +128,40 @@ namespace Program
             ##  Input og Output til konsolen ##
             ###################################
 
+            For at smide noget ud i konsolen, bruger man Console.WriteLine();, hvor du indsætter en værdi i parenteserene på writeline
+            
+            For så at få en bruger input i konsolen, skal du bruge Console.ReadLine();
+            Den tager inputtet fra konsolen, og returner det som en string værdi
+            Det er en meget vigtig viden, fordi hvis du skal bruge en talværdi, skal du konvertere string værdien til et tal
+            
+            En simpel måde at gøre det, er ved at skrive Convert.ToInt32(Console.ReadLine());
+            Så får du en værdi som bliver et tal, dog kan der slå fejl, hvis man inputter andet end tal
+            Og så skal du i gang med fejlhåndtering
+            */
 
+            //Vi tager noget input og lader konsollen printe det ud
+            Console.WriteLine("Skriv noget sejt:");
+            string tekstinput = Console.ReadLine();
+            Console.WriteLine("Du skrev: " + tekstinput);
+
+            Console.WriteLine("Skriv et tal");
+            int talinput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Du skrev: " + talinput);
+            Console.WriteLine("Jeg plusser dit tal med 2: " + (talinput + 2)); //Hurtig matematik kan lave også
+            Console.ReadKey();
+
+            /*
+            ######################################################
+            ##  Kontrolstrukturer, både betingelser og løkker   ##
+            ######################################################
+
+            Vi skal nu have struktur.
+            Der forskellige måder man kan lave kontrol
+            Vi starter med betingelse og erklæring (conditions and statement)
+            Mere kan findes her https://www.w3schools.com/cs/cs_conditions.php
+
+            Betingelse
+            Vi skal først lave en betingelse 
 
 
             */
