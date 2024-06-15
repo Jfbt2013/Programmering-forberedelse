@@ -1,0 +1,7 @@
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\bin\Debug\Opgave_om_Algoritmer.exe.config
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\bin\Debug\Opgave_om_Algoritmer.exe
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\bin\Debug\Opgave_om_Algoritmer.pdb
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\obj\Debug\Opgave_om_Algoritmer.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\obj\Debug\Opgave_om_Algoritmer.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\obj\Debug\Opgave_om_Algoritmer.exe
+C:\Users\chris\source\repos\Opgave_om_Algoritmer\Opgave_om_Algoritmer\obj\Debug\Opgave_om_Algoritmer.pdb
