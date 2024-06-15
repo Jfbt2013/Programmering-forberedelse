@@ -411,9 +411,8 @@ namespace Program
             List<string> saf = new List<string>();
             saf.Add("hej"); //Sådan tilføjer man ting til listen
 
-            /*
-              
-            */
+
+
         }
     }
 }
