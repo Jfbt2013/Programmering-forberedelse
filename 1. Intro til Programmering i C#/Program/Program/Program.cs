@@ -308,7 +308,7 @@ namespace Program
             Så kommer vi til løkker(loops)
             Løkker er en måde, for at køre noget kode om og om igen, indtil en betingelse er noget
             Der findes forskellige slags løkker
-            "For" løkker og "While" løkker
+            "For" løkker, "forEach" løkker og "While" løkker
 
             "While" løkker er den nemmeste, da den køre så længe en betingelse er sand
             De ser sådan her ud: 
@@ -329,6 +329,14 @@ namespace Program
             Et eksempel hvordan det nogenlunde kan se ud:
             for(int i = x; i<y ;i++)
             Læs mere her: https://www.w3schools.com/cs/cs_for_loop.php
+            
+            "Foreach" løkken, tager antallet af elementer i en liste, og køre over dem
+            Eksempel hvordan sådan en ser ud
+            forEach (datatype variabelnavn in array) 
+            {
+                FunktionA
+                Og du kan bruge variabelnavn,
+            }
 
             Der findes så nogle keywords: "continue" og "break"
             continue: går videre til næste iteration i løkken
@@ -336,7 +344,7 @@ namespace Program
             */
 
             //while løkke
-            while(heltal4<10)
+            while (heltal4<10)
             {
                 heltal4++;
                 Console.WriteLine(heltal4);
@@ -361,7 +369,51 @@ namespace Program
                 }
                 Console.WriteLine(i);
             }
+
+            //Taget fra https://www.w3schools.com/cs/cs_foreach_loop.php
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+            foreach (string i in cars)
+            {
+                Console.WriteLine(i);
+            }
             Console.ReadKey();
+
+            /*
+            ###################################
+            ##  Kollektioner, Array & List   ##
+            ###################################
+
+            Det Array og List har tilfælles, er at de kan indholde flere elementer samtidig.
+            Men de gør det på forskellige måder 
+
+            En Array, kan man sætte til en fiksed størrelse, så den kan ikke holde mere end x antal elementer, hvis man ønsker. 
+            Det x tal kan være svært at ændre på, når man har erklæret variablen
+
+            En List kan man ikke sætte til en fiksed størrelse, men man kan lave mere dynamiske kollektioner med den, så der er 2 variabler i 1 element for eksempel.
+
+            For ærklære array skal man skrive:
+                datatype[] variabelnavn = data/maxstørrelse
+
+            Med eksemplerne fra https://www.w3schools.com/cs/cs_arrays.php, kan du gøre sådan her
+            */
+
+            //Array eksempler
+            string[] cars1 = new string[4]; //Vi laver en string array, med maks arraystørrelse på 4
+            cars1.Append("Chris");//Sådan tilføjer vi 
+
+            string[] cars2 = new string[4] { "Volvo", "BMW", "Ford", "Mazda" }; //Vi laver en string array, med maks arraystørrelse på 4, med data indsat
+
+            string[] cars3 = new string[] { "Volvo", "BMW", "Ford", "Mazda" };//Vi laver en string array, med data indsat
+
+            string[] cars4 = { "Volvo", "BMW", "Ford", "Mazda" };// Gør det samme som ovenover, uden at vi skriver "new string[]"
+            
+            //List eksempler
+            List<string> saf = new List<string>();
+            saf.Add("hej"); //Sådan tilføjer man ting til listen
+
+            /*
+              
+            */
         }
     }
 }
