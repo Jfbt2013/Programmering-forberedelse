@@ -161,10 +161,88 @@ namespace Program
             Mere kan findes her https://www.w3schools.com/cs/cs_conditions.php
 
             Betingelse
-            Vi skal først lave en betingelse 
+            Vi skal først lave have betingelser, før vi kan lave erklæringer
+            En betingelse kan være:
+                a==b    | a er lig med b
+                a<b     | b er større end a
+                a<=b    | b er større eller lig med a
+                a>b     | b er mindre end a
+                a>=b    | b er mindre eller lig med a
+                a!=b    | b er ikke lig med a
+            Hvis disse betingelser er usande, slår den fejl
+            De her er simple betingelser som er vigtigt at kende. 
 
+            Så kommer vi til erklæringer
+            Vi kan starte med if erklæringer(if statements)
+            Man laver sådan en ved
+
+            if(betingelse){
+                Gør funktion()
+            }
+
+            Hvis betingelsen er opfyldt, så vil den lave det er inde for {}
+            Så findes der en if else, som ser sådan her ud
+
+            if(betingelse){
+                funktionA()
+            } else {
+                funktionB()
+            }
+
+            Hvis betingelsen bliver opfyldt, laver den funktionA, hvis den ikke er opfyldt, går den til funktionB
+            Så findes der "else if", som ser sådan her ud
+
+            if(betingelse1){
+                funktionA1()
+            } else if(betingelse2) {
+                funktionA2()
+            }else{
+                funktionB()
+            }
+
+            I sådan en erklæring/statement, kan du lave flere betingelser, men det går i rækkefølge. 
+            Så hvis betingelse1 ikke bliver opfyldt, kigger den på betingelse2, og ser om den er opfyldt.
+            funktionA1 og funktionA2 kunne godt være den samme funktion, hvis man ønsker
+
+            Så reglerne for if erklærigner er:
+                Den skal altid starte på "if(betingelse)"
+                Vil du have flere betingelser, tilføjer du "else if(betingelse)"
+                Og hvis ingen af betingelserne er opfyldt,  og du vil have den laver plan b, istedet for den går ind i resten af koden skriver du else
+                Man må maks have 1 else 
 
             */
+
+            //Lad os demonstrere
+            Console.WriteLine("Vi tjekker om heltal1 er over 2");
+            if (heltal1 > 2)
+            {
+                Console.WriteLine("Heltal1 er over 2");
+            }
+
+
+            Console.WriteLine("Hvis heltal2 er over 0, skal den sige ja, ellers skal den sige nej");
+            if(heltal2 > 0) {
+                Console.WriteLine("Ja");//Funktion A
+            }
+            else { 
+                Console.WriteLine("Nej");//Funktion B
+            }
+
+
+            if(heltal3 < 0)
+            {
+                Console.WriteLine("Condition 1 virkede");
+            }
+            else if(heltal4 < 0) {
+                Console.WriteLine("Condition 2 virkede");
+            }
+            else
+            {
+                Console.WriteLine("Ingen condition virkede");
+            }
+
+            Console.ReadKey();
+
         }
     }
 }
