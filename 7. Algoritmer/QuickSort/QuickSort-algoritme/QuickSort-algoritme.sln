@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort-algoritme", "QuickSort-algoritme\QuickSort-algoritme.csproj", "{E4259444-6EF6-469B-B76D-E7FFD8424C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4259444-6EF6-469B-B76D-E7FFD8424C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4259444-6EF6-469B-B76D-E7FFD8424C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4259444-6EF6-469B-B76D-E7FFD8424C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4259444-6EF6-469B-B76D-E7FFD8424C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {735B0E72-7909-4AB7-A8C1-CF238B49244B}
+	EndGlobalSection
+EndGlobal

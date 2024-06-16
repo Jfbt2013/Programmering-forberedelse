@@ -1,0 +1,7 @@
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\bin\Debug\Opgaver_med_Algoritmer_og_Test.exe.config
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\bin\Debug\Opgaver_med_Algoritmer_og_Test.exe
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\bin\Debug\Opgaver_med_Algoritmer_og_Test.pdb
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\obj\Debug\Opgaver_med_Algoritmer_og_Test.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\obj\Debug\Opgaver_med_Algoritmer_og_Test.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\obj\Debug\Opgaver_med_Algoritmer_og_Test.exe
+C:\Users\chris\source\repos\Opgaver_med_Algoritmer_og_Test\Opgaver_med_Algoritmer_og_Test\obj\Debug\Opgaver_med_Algoritmer_og_Test.pdb
