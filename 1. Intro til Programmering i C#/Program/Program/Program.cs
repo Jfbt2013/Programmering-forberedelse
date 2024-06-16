@@ -161,10 +161,258 @@ namespace Program
             Mere kan findes her https://www.w3schools.com/cs/cs_conditions.php
 
             Betingelse
-            Vi skal først lave en betingelse 
+            Vi skal først lave have betingelser, før vi kan lave erklæringer
+            En betingelse kan være:
+                a==b    | a er lig med b
+                a<b     | b er større end a
+                a<=b    | b er større eller lig med a
+                a>b     | b er mindre end a
+                a>=b    | b er mindre eller lig med a
+                a!=b    | b er ikke lig med a
+            Hvis disse betingelser er usande, slår den fejl
+            De her er simple betingelser som er vigtigt at kende. 
 
+            Så kommer vi til erklæringer
+            Vi kan starte med if erklæringer(if statements)
+            Man laver sådan en ved
+
+            if(betingelse){
+                Gør funktion()
+            }
+
+            Hvis betingelsen er opfyldt, så vil den lave det er inde for {}
+            Så findes der en if else, som ser sådan her ud
+
+            if(betingelse){
+                funktionA()
+            } else {
+                funktionB()
+            }
+
+            Hvis betingelsen bliver opfyldt, laver den funktionA, hvis den ikke er opfyldt, går den til funktionB
+            Så findes der "else if", som ser sådan her ud
+
+            if(betingelse1){
+                funktionA1()
+            } else if(betingelse2) {
+                funktionA2()
+            }else{
+                funktionB()
+            }
+
+            I sådan en erklæring/statement, kan du lave flere betingelser, men det går i rækkefølge. 
+            Så hvis betingelse1 ikke bliver opfyldt, kigger den på betingelse2, og ser om den er opfyldt.
+            funktionA1 og funktionA2 kunne godt være den samme funktion, hvis man ønsker
+
+            Så reglerne for if erklærigner er:
+                Den skal altid starte på "if(betingelse)"
+                Vil du have flere betingelser, tilføjer du "else if(betingelse)"
+                Og hvis ingen af betingelserne er opfyldt,  og du vil have den laver plan b, istedet for den går ind i resten af koden skriver du else
+                Man må maks have 1 else 
+
+            Tror ikke det vigtigt men:
+            Man kan så også lave ekstra betingelser, som ser sådan her ud:
+                a<b && c==d     | a er mindre end b OG c er lig med d
+                a>b || b==c     | a er større end b ELLER b er lig med c
+            Læs mere her: https://www.w3schools.com/cs/cs_operators_logical.php
+            
+            */
+
+            //Lad os demonstrere
+            Console.WriteLine("Vi tjekker om heltal1 er over 2");
+            if (heltal1 > 2)
+            {
+                Console.WriteLine("Heltal1 er over 2");
+            }
+
+
+            Console.WriteLine("Hvis heltal2 er over 0, skal den sige ja, ellers skal den sige nej");
+            if(heltal2 > 0) {
+                Console.WriteLine("Ja");//Funktion A
+            }
+            else { 
+                Console.WriteLine("Nej");//Funktion B
+            }
+
+
+            if(heltal3 < 0)
+            {
+                Console.WriteLine("Condition 1 virkede");
+            }
+            else if(heltal4 < 0) {
+                Console.WriteLine("Condition 2 virkede");
+            }
+            else
+            {
+                Console.WriteLine("Ingen condition virkede");
+            }
+            Console.ReadKey();
+
+            /*
+            En anden løsning, som en erstatning på man laver en lang liste af "else if" erklæringer så kan man bruge switch(case)
+
+            Strukturen på sådan en forgår
+            switch(variabelnavn){
+                case værdi:
+                    funktionA();
+                    break;
+
+            }
+            Her er tjekker vi om variablet har en bestemt værdi
+            Man kan så tilføje "default", hvis den har ingen af værdierne. Lidt lige som "else"
+            switch(variabelnavn){
+                case værdi:
+                    funktionA();
+                    break;
+                default:
+                    funktionB();
+                    break;
+            }
+
+            Man kan lave uendelige case, og det skulle vidst fylde en smule mindre i forhold til hvis man laver else if
 
             */
+
+            //Eksempler
+            Console.WriteLine("Skriv ja eller nej");
+            string caseinput = Console.ReadLine();
+            switch(caseinput) {
+                case "ja":
+                    Console.WriteLine("Du skrev ja");
+                    break;
+                case "nej":
+                    Console.WriteLine("Du skrev nej");
+                    break;
+                default:
+                    Console.WriteLine("Du skrev ingen af delene");
+                    break;
+            }
+
+            Console.WriteLine("Skriv 1 eller 2");
+            int caseinput2=Convert.ToInt32(Console.ReadLine());
+            switch(caseinput2)
+            {
+                case 1:
+                    Console.WriteLine("Du skrev 1");
+                    break;
+                case 2:
+                    Console.WriteLine("Du skrev 2");
+                    break;
+                default:
+                    Console.WriteLine("Du skrev ingen af tallene");
+                    break;
+            }
+
+            Console.ReadKey();
+            /*
+            Så kommer vi til løkker(loops)
+            Løkker er en måde, for at køre noget kode om og om igen, indtil en betingelse er noget
+            Der findes forskellige slags løkker
+            "For" løkker, "forEach" løkker og "While" løkker
+
+            "While" løkker er den nemmeste, da den køre så længe en betingelse er sand
+            De ser sådan her ud: 
+            while(betingelse){
+                funktionA
+            }
+
+            "For" Løkker bruges med lister, strings eller ligende
+            deres syntaks er
+            for(erklæring1, erklæring2, erklæring3){
+                funktionA
+            }
+
+            erklæring1 bliver brugt 1 gang før koden går i gang
+            erklæring2 er vores betingelse
+            erklæring3 er kode, som bliver kørt hver gang når den har været igennem kodeblokken
+            
+            Et eksempel hvordan det nogenlunde kan se ud:
+            for(int i = x; i<y ;i++)
+            Læs mere her: https://www.w3schools.com/cs/cs_for_loop.php
+            
+            "Foreach" løkken, tager antallet af elementer i en liste, og køre over dem
+            Eksempel hvordan sådan en ser ud
+            forEach (datatype variabelnavn in array) 
+            {
+                FunktionA
+                Og du kan bruge variabelnavn,
+            }
+
+            Der findes så nogle keywords: "continue" og "break"
+            continue: går videre til næste iteration i løkken
+            break: stopper løkken
+            */
+
+            //while løkke
+            while (heltal4<10)
+            {
+                heltal4++;
+                Console.WriteLine(heltal4);
+            }
+            while (boolean1 == false)
+            {
+                decimaltal2++;
+                if (decimaltal2 > 0)
+                {
+                    Console.WriteLine("Passer");
+                    boolean1 = true;
+                    break;//Vi ødelækker resten af løkken
+                }
+                Console.WriteLine("Passer ikke");
+            }
+
+            for(int i = 0; i < 10; i++)
+            {
+                if(i==5)
+                {
+                    continue; //Hvis i er lig med 5, skal den gå videre til næste iteration
+                }
+                Console.WriteLine(i);
+            }
+
+            //Taget fra https://www.w3schools.com/cs/cs_foreach_loop.php
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+            foreach (string i in cars)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+
+            /*
+            ###################################
+            ##  Kollektioner, Array & List   ##
+            ###################################
+
+            Det Array og List har tilfælles, er at de kan indholde flere elementer samtidig.
+            Men de gør det på forskellige måder 
+
+            En Array, kan man sætte til en fiksed størrelse, så den kan ikke holde mere end x antal elementer, hvis man ønsker. 
+            Det x tal kan være svært at ændre på, når man har erklæret variablen
+
+            En List kan man ikke sætte til en fiksed størrelse, men man kan lave mere dynamiske kollektioner med den, så der er 2 variabler i 1 element for eksempel.
+
+            For ærklære array skal man skrive:
+                datatype[] variabelnavn = data/maxstørrelse
+
+            Med eksemplerne fra https://www.w3schools.com/cs/cs_arrays.php, kan du gøre sådan her
+            */
+
+            //Array eksempler
+            string[] cars1 = new string[4]; //Vi laver en string array, med maks arraystørrelse på 4
+            cars1.Append("Chris");//Sådan tilføjer vi 
+
+            string[] cars2 = new string[4] { "Volvo", "BMW", "Ford", "Mazda" }; //Vi laver en string array, med maks arraystørrelse på 4, med data indsat
+
+            string[] cars3 = new string[] { "Volvo", "BMW", "Ford", "Mazda" };//Vi laver en string array, med data indsat
+
+            string[] cars4 = { "Volvo", "BMW", "Ford", "Mazda" };// Gør det samme som ovenover, uden at vi skriver "new string[]"
+            
+            //List eksempler
+            List<string> saf = new List<string>();
+            saf.Add("hej"); //Sådan tilføjer man ting til listen
+
+
+
         }
     }
 }
