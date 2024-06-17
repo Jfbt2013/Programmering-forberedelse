@@ -1,0 +1,8 @@
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\obj\Debug\unittesting.csproj.AssemblyReference.cache
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\obj\Debug\unittesting.csproj.SuggestedBindingRedirects.cache
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\obj\Debug\unittesting.csproj.CoreCompileInputs.cache
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\bin\Debug\unit testing.exe.config
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\bin\Debug\unit testing.exe
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\bin\Debug\unit testing.pdb
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\obj\Debug\unit testing.exe
+C:\Users\jfbt2\Desktop\matpro\unit testing\unit testing\obj\Debug\unit testing.pdb
